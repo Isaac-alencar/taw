@@ -1,0 +1,76 @@
+.about-characters-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 16rem 0;
+}
+
+.about-characters-section h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
+  color: var(--light-blue);
+}
+
+.about-characters__list-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  margin: 2rem auto;
+  max-width: 60%;
+  width: 100%;
+}
+
+.about-characters__list-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style-type: none;
+  background-color: var(--grey);
+  border: 1px solid var(--dark-grey);
+  padding: 2rem;
+  border-radius: 0.25rem;
+}
+
+.about-characters__history strong, p {
+  font-family: 'Poppins', sans-serif;
+  line-height: 160%;
+}
+
+.about-characters__history strong {
+  font-size: 2rem;
+}
+
+.about-characters__history p {
+  margin-top: 1rem;
+}
+
+
+.about-characters__list-item img {
+  width: 250px;
+  height: 90%;
+}
+
+@media (max-width: 768px) {
+
+  .about-characters-section {
+    margin: 8rem 0;
+  }
+
+  .about-characters__list-container ul {
+    max-width: 100%;
+  }
+
+  .about-characters__list-item {
+    flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .about-characters-section h2 {
+    font-size: 2rem;
+  }
+}

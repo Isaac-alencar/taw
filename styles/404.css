@@ -1,0 +1,63 @@
+.content {
+  position: relative;
+  overflow: hidden;
+}
+
+.content h1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 20vh;
+}
+
+.content h2 {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 10vh;
+}
+
+.content,
+.sun-container {
+  height: 100vh;
+  width: 100%;
+}
+
+.sun-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  transform: rotate(180deg);
+  transform-origin: center bottom;
+
+  will-change: transform;
+  animation: translation linear 10s infinite;
+}
+
+.sun {
+  height: 40vh;
+}
+
+@keyframes translation {
+  from {
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  to {
+    -webkit-transform: rotate(540deg);
+    -o-transform: rotate(540deg);
+    transform: rotate(540deg); 
+  }
+}
